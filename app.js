@@ -37,13 +37,28 @@ Vue.createApp({
         this.contador === 0 ? this.contador =0 :this.contador--;
        
       },
-      inputName(event){
-          this.name = event.target.value;
+      inputName(event, sobrenome){
+          this.name = event.target.value + sobrenome;
+  
       }
   } 
 }).mount('#contador');
 
+Vue.createApp({
+  data() {
+    return {
+     
+    };
+  },
+   methods:{
 
+    enviarFormulario(){
+
+      alert("impedir evento!");
+    }
+    
+  } 
+}).mount('#formulario');
 
 // const buttonEl = document.querySelector('button');
 // const inputEl = document.querySelector('input');

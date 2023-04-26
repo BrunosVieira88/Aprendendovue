@@ -21,11 +21,17 @@
       <p>{{ metodoSaida() }}</p>
     </div>
     <div id="contador" style="text-align: center;">
-      <input type="text" v-on:input="inputName">
+      <input type="text" v-on:input="inputName($event ,', o melhor em Vue.js')">
       <p>Seu nome é: {{ name }}</p>
       <button v-on:click="add">Add</button>
       {{contador}}
       <button v-on:click="remove">Remover</button>
+    </div>
+    <div id="formulario">
+      <form v-on:submit.prevent="enviarFormulario">
+        <input type="text">
+        <button>Entrar</button>
+      </form>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
