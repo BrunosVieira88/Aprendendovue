@@ -8,6 +8,7 @@ Vue.createApp({
       reprovado:'Reprovado',
       comHTML:"<h2>COM HTML!!!</h2>",
       contador: 0,
+     
     };
   },
   methods: {
@@ -28,8 +29,12 @@ Vue.createApp({
     return {
       contador: 0,
       name: '',
+      enterName:''
     };
   }, methods:{
+    confirmedName(){
+      this.enterName = this.name;
+    },
       add(){
         this.contador++;
       },
