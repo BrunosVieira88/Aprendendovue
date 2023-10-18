@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Os Chapeus de Palha</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,7 +13,7 @@
 
         <div id="app">
             <div class="text-center">
-                <img src="img/wallpaper.jpg" alt="a tripulaçao do chapeu de palha" style="height: 80vh;width: 80%;">
+                <img src="img/wallpaper.jpg" class="imagem" alt="a tripulaçao do chapeu de palha" style="height: 80vh;width: 80%;">
             </div>
             <div class="card container text-center mt-3" style="width: 80%;">
                 <h2>A História de "One Piece": Em Busca do One Piece e Além</h2>
@@ -58,31 +58,40 @@
                     uma das histórias mais duradouras e cativantes da história do anime e do manga.</p>
 
             </div>
-
-            <div class="d-flex justify-content-between container mt-2" style="width: 80%;">
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(luffy)">
-                    Monkey D. Luffy</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(zoro)">
-                    Roronoa Zoro</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(nami)">
-                    Nami</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(usopp)">
-                    Usopp</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(sanji)">
-                    Sanji</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(chopper)">
-                    Tony Tony Chopper</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(robin)">
-                    Nico Robin</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(franky)">
-                    Franky</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(brook)">
-                    Brook</p>
-                <p class="btn btn-primary" @mouseover="personagemSelecionado(jinbei)">
-                    Jinbei</p>
-
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(luffy)">Monkey D. Luffy</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(zoro)">Roronoa Zoro</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(nami)">Nami</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(usopp)">Usopp</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(sanji)">Sanji</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(chopper)">Tony Tony Chopper</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(robin)">Nico Robin</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(franky)">Franky</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(brook)">Brook</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <p class="btn btn-primary" @mouseover="personagemSelecionado(jinbei)">Jinbei</p>
+                    </div>
+                </div>
             </div>
-
             <div class="text-center">
                 <div class="row">
                     <div class="col-md-6">
@@ -553,4 +562,12 @@
         background-color: #225588;
         /* Cor de fundo quando o mouse está sobre o elemento */
     }
+
+    @media (max-width: 768px) {
+    .imagem {
+       width: auto;
+       height: auto;
+    }
+}
+ 
 </style>
