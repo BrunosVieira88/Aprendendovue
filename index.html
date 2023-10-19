@@ -13,7 +13,8 @@
 
         <div id="app">
             <div class="text-center">
-                <img src="img/wallpaper.jpg" class="imagem" alt="a tripulaçao do chapeu de palha" style="height: 80vh;width: 80%;">
+                <img src="img/wallpaper.jpg" class="imagem" alt="a tripulaçao do chapeu de palha"
+                    style="height: 80vh;width: 80%;">
             </div>
             <div class="card container text-center mt-3" style="width: 80%;">
                 <h2>A História de "One Piece": Em Busca do One Piece e Além</h2>
@@ -58,39 +59,17 @@
                     uma das histórias mais duradouras e cativantes da história do anime e do manga.</p>
 
             </div>
-            <div class="container mt-2">
-                <div class="row">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(luffy)">Monkey D. Luffy</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(zoro)">Roronoa Zoro</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(nami)">Nami</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(usopp)">Usopp</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(sanji)">Sanji</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(chopper)">Tony Tony Chopper</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(robin)">Nico Robin</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(franky)">Franky</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(brook)">Brook</p>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <p class="btn btn-primary" @mouseover="personagemSelecionado(jinbei)">Jinbei</p>
-                    </div>
-                </div>
+            <div class="container mt-2 responsive-container">
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(luffy)">Monkey D. Luffy</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(zoro)">Roronoa Zoro</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(nami)">Nami</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(usopp)">Usopp</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(sanji)">Sanji</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(chopper)">Tony Tony Chopper</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(robin)">Nico Robin</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(franky)">Franky</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(brook)">Brook</p>
+                <p class="btn btn-primary" @mouseover="personagemSelecionado(jinbei)">Jinbei</p>
             </div>
             <div class="text-center">
                 <div class="row">
@@ -98,7 +77,7 @@
                         <img :src="'img/'+personagem + '.png'" :alt="personagem" class="img-fluid mt-5 photo">
                     </div>
                     <div class="col-md-6 d-flex justify-content-center align-items-center">
-                        <div v-if="personagem == 'Luffy'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Luffy'" class="card-custom p-5 text-center">
                             <h2>Monkey D. Luffy: O Aventureiro Determinado de One Piece</h2>
 
                             <p>Monkey D. Luffy é um dos personagens mais icônicos do mundo do anime e manga,
@@ -141,7 +120,7 @@
                                 uma das histórias mais emocionantes e duradouras da cultura pop, fazendo dele um
                                 verdadeiro herói dos mares.</p>
                         </div>
-                        <div v-if="personagem == 'Nami'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Nami'" class="card-custom p-5 text-center">
                             <h2>Nami: A Navegadora Genial dos Piratas do Chapéu de Palha</h2>
 
                             <p>Nami é uma personagem essencial na série de anime e manga "One Piece" criada por Eiichiro
@@ -181,7 +160,7 @@
                                 Ao enfrentar os perigos do Grande Mar, Nami continua a ser uma figura inspiradora,
                                 trabalhando para traçar o mundo e superar desafios com determinação inabalável.</p>
                         </div>
-                        <div v-if="personagem == 'Ussop'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Ussop'" class="card-custom p-5 text-center">
                             <h2>Usopp: O Atirador dos Piratas do Chapéu de Palha</h2>
 
                             <p>Usopp é um personagem carismático da popular série de anime e manga "One Piece" criada
@@ -221,7 +200,7 @@
                                 poderosos, Usopp continua a inspirar seus companheiros com suas histórias heróicas e seu
                                 espírito destemido.</p>
                         </div>
-                        <div v-if="personagem == 'Nico'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Nico'" class="card-custom p-5 text-center">
                             <h2>Nico Robin: A Arqueóloga e Historiadora dos Piratas do Chapéu de Palha</h2>
 
                             <p>Nico Robin é uma personagem cativante da série de anime e manga "One Piece" criada por
@@ -259,7 +238,7 @@
                                 dos Piratas do Chapéu de Palha, ela contribui significativamente para o sucesso da
                                 tripulação enquanto desvenda os segredos do mundo.</p>
                         </div>
-                        <div v-if="personagem == 'Zoro'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Zoro'" class="card-custom p-5 text-center">
                             <h2>Roronoa Zoro: O Espadachim Implacável dos Piratas do Chapéu de Palha</h2>
 
                             <p>Roronoa Zoro é um dos personagens centrais da série de anime e manga "One Piece", criada
@@ -300,7 +279,7 @@
                                 de Palha são traços que o tornam um membro inestimável da equipe, enquanto enfrentam
                                 inimigos poderosos e exploram os mistérios do mundo.</p>
                         </div>
-                        <div v-if="personagem == 'Sanji'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Sanji'" class="card-custom p-5 text-center">
                             <h2>Sanji: O Cozinheiro-Guerreiro dos Piratas do Chapéu de Palha</h2>
 
                             <p>Sanji é um personagem fundamental na renomada série de anime e manga "One Piece" criada
@@ -341,7 +320,7 @@
                                 de Sanji continua a evoluir à medida que a tripulação navega pelo Grande Mar,
                                 enfrentando desafios incríveis e desvendando segredos do mundo de "One Piece".</p>
                         </div>
-                        <div v-if="personagem == 'Chopper'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Chopper'" class="card-custom p-5 text-center">
                             <h2>Tony Tony Chopper: O Médico Antropomórfico dos Piratas do Chapéu de Palha</h2>
 
                             <p>Tony Tony Chopper, muitas vezes chamado de Chopper, é um dos adoráveis e únicos
@@ -381,7 +360,7 @@
                                 emocionante da narrativa. Chopper representa a importância da amizade, compreensão e
                                 superação de desafios pessoais no mundo de "One Piece".</p>
                         </div>
-                        <div v-if="personagem == 'Brook'" class="card p-5 text-center me-5">
+                        <div v-if="personagem == 'Brook'" class="card-custom p-5 text-center">
                             <h2>Brook: O Esqueleto Músico dos Piratas do Chapéu de Palha</h2>
 
                             <p>Brook é um personagem único e icônico na série de anime e manga "One Piece" criada por
@@ -420,7 +399,7 @@
                                 Chapéu de Palha. Sua história de superar a solidão e encontrar uma nova família é uma
                                 parte emocionante do mundo de "One Piece".</p>
                         </div>
-                        <span v-if="personagem == 'Franky'" class="card p-5 text-center me-5">
+                        <span v-if="personagem == 'Franky'" class="card-custom p-5 text-center">
                             <h2>Franky: O Engenheiro Cibernético dos Piratas do Chapéu de Palha</h2>
 
                             <p>Franky é um personagem carismático da série de anime e manga "One Piece" criada por
@@ -461,7 +440,7 @@
                                 inestimável dos Piratas do Chapéu de Palha. Sua história pessoal de superação e redenção
                                 é uma parte importante da narrativa, adicionando profundidade ao seu personagem.</p>
                         </span>
-                        <span v-if="personagem == 'Jinbei'" class="card p-5 text-center me-5">
+                        <span v-if="personagem == 'Jinbei'" class="card-custom p-5 text-center">
                             <h2>Jinbei: O Pescador do Sol e Estrategista dos Piratas do Chapéu de Palha</h2>
 
                             <p>Jinbei é um personagem marcante na série de anime e manga "One Piece" criada por Eiichiro
@@ -563,11 +542,34 @@
         /* Cor de fundo quando o mouse está sobre o elemento */
     }
 
-    @media (max-width: 768px) {
-    .imagem {
-       width: auto;
-       height: auto;
+    .card-custom {
+        margin-right: 20%;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow:  3px 3px 3px white;
     }
-}
- 
+
+    .responsive-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .responsive-container p {
+        flex: 1;
+        margin: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .imagem {
+            width: auto;
+            height: 60%;
+        }
+
+        .card-custom {
+            margin-right: 0%;
+            background-color: white;
+            border-radius: 2%;
+            box-shadow:  1px 2px 3px white;
+        }
+    }
 </style>
